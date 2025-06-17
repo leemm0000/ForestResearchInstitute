@@ -1,0 +1,32 @@
+
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+font-family: 'Noto Sans KR', sans-serif;
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  font-family: "Roboto", sans-serif;
+
+/*GmarketSans*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');}
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+  
+
+======================================================
+
+■ Reference URL
+
+FontAwesome 4.7 CheatSheet
+https://fontawesome.bootstrapcheatsheets.com/
+
+XEICON Ver2.3.3
+https://xpressengine.github.io/XEIcon/
+
+Web Gradients
+https://webgradients.com/

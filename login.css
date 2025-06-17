@@ -1,0 +1,113 @@
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*GmarketSans*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');}
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body{  font-family:'GmarketSansMedium'; 
+margin: 0;padding: 0;}
+
+/* background */
+.bc{
+  background: url(images/bg_0.png) no-repeat top;
+  object-fit: fill;
+  width: 100%;  height: 100vh;
+  animation: bg 3s ease-out both infinite;
+  transform-origin: bottom;
+  animation-delay: .4s;
+  background-attachment: fixed; 
+}
+@keyframes bg{
+  0% { transform: translateY(20px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(20px); }
+}
+
+html {
+  height: 100%;
+  }
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo{width: 100% ; padding-bottom: 20px;}
+.logo img{width: 50%;  }
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #EAC100;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0B8457;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+.btn_wrap{}
+.btn{ transition: .5s; margin: auto;padding: 10px; background-color: #fff; display: block; cursor: pointer; border-radius: 20px; 
+text-align: center; transition: .5s;}
+.btn:hover{width: 50%; background-color: #0B8457;color: #fff;}

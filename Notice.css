@@ -1,0 +1,189 @@
+/*root  */
+:root{
+  --main-color:#096C47;
+  --sub-color:#0B8457;
+  --yellow:#EAC100;
+  --text:#222222;    
+  --swiper-theme-color: #8E8E8E
+}
+/* 헤더 */
+
+header{background-color: #F9F9F9; width: 100%; height: 100px; display: flex; justify-content: space-between; text-align: center;   transition: .3s; z-index: 100; position: relative;
+}
+header>div,
+header>a{padding-top: 45px }
+.logo{width: 250px; padding-left: 1rem;}
+.logo img{width: 100%; }
+.main_menu{  transition: 0.3s;}
+.main_menu ul{display: flex;}
+.main_menu ul li{padding: 0 30px; transition: 0.3s;}
+.main_menu ul li:hover a{background: var(--yellow);  color: #fff;padding: 4px 10px;  opacity: 1; border-radius: 10px;}
+.main_menu ul li a{font-size: 15px; transition: 0.3s;}
+.icon{margin-right: 1rem;}
+.fa-bars{color:  var(--main-color);}
+
+/* 서브메뉴 모바일 */
+#nav_toggle {display: none; opacity: 0;}
+.mobile_nav {
+  display: none;  /* 기본 숨김 */
+  position: static;
+  margin-top:100px;
+  padding:  20px 20px 20px; 
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
+  height: 100%;
+  z-index: 103;
+  transition: 0.3s;
+  text-align: center;
+}
+#nav_toggle:checked ~ .mobile_nav {
+  display: block;
+
+  
+}
+
+.mobile_nav details{
+  border-bottom: 1px dashed rgb(255, 255, 255); padding: 20px 0;
+
+
+}
+.mobile_nav summary{color: #fff; font-weight: 700; cursor: pointer; list-style: none; padding: 20px 0;
+font-size: 15px;}
+.mobile_nav a{display: block; text-decoration: none; color: #fff; padding: 5px 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+  .mobile_nav a:hover{padding: 10px;   font-weight: bold;}
+  .mobile_nav .search_box{margin-top: 20px;}
+
+ 
+
+
+
+
+
+
+/* 서브메뉴 */
+.main_menu:hover .sub_wrap{display: block;}
+.sub_wrap {
+  display: flex; /* 기본은 숨김 */
+  position: absolute;
+  top: -120px; /* header 높이에 맞춤 */
+  left: 0;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  background-color: var(--main-color);
+  color: #fff;
+  z-index: 9;
+  transition: .3s;
+}
+
+/* 마우스 올리면 서브메뉴 표시 */
+header:hover+.sub_wrap,
+.sub_wrap:hover{display: flex;  top: 100px; }
+
+.submenu_content{ display: flex; text-align: center;padding-left:250px }
+.submenu_content ul{ padding: 20px; margin: 10px; transition: .4s; }
+.submenu_content ul li{    transition: 0.3s;}
+.submenu_content ul li:hover{padding: 5px 0;border-bottom: 1px solid #fff;}
+.submenu_content ul li a{ font-size: 12px; color: #F9F9F9;}
+
+
+/*  notice_title */
+.notice{width: 100%; height: 165px; display: flex;justify-content: center; align-items: center; background: linear-gradient(to top, #D9D9D9, #737373); color: #fff;}
+
+/*  location */
+.location{width: 100%; background-color: #F5F5F5;}
+.location ul{display: flex;  width: 80%;  margin: auto;justify-content: left; text-align: center; }
+.location ul i{ 
+  border-left: 1px solid  var(--main-color); 
+  border-right: 1px solid  var(--main-color); background-color:#F8F1D0; color: var(--main-color); height: 50px; line-height: 50px; width: 65px; font-size: 12px;}
+.location ul li{ border-right: 1px solid  var(--main-color); width: 172px; height: 50px; line-height: 50px; font-size: 12px;  }
+.location ul li a{ color: var(--main-color); display: flex; 
+  padding-left:20px; position: relative;}
+.location ul li a::after{
+  content:"\f078";
+  font-weight: 900; 
+  font-family: "Font Awesome 6 Free"; position: absolute; right:20px ;
+}
+/* cont_title */
+.cont_title{
+  width: 100%; height: 100px;
+  display: flex; justify-content: center; text-align: center;
+  align-items: center; background-color: var(  --main-color);
+  color: #fff;
+}
+/*  contents */
+td, th{ 
+  padding: .5rem 1rem;
+}
+
+#my-table{
+width: 80%;  
+margin: auto;
+margin-top: 95px ;
+}
+#my-table thead{border: 1px solid #000; }
+th{
+font-size: 12px ; 
+padding: 10px 40px !important;
+ 
+}
+td{font-size: 12px;
+text-align: center;
+padding: 20px !important; 
+border-bottom: 1px solid #D9D9D9;
+color: ;}
+
+.pagination{display: flex;gap: 20px; justify-content: center; align-items: center; padding: 1rem;  }
+.pagination a{text-decoration: none; color: #999999;}
+#numbers{display: flex; padding: 0 10px;}
+#numbers li{list-style:none;}
+#numbers li a{  font-size: 12px;
+width: 30px; height: 30px; display: flex;
+border-radius: 50%;
+justify-content: center; align-items: center;
+opacity: .7;
+}
+#numbers li a:hover{opacity: 1;}
+#numbers li a.active{opacity: 1;  background:#999999; color: #fff; }
+.arrow-left, .arrow-right{color: #999999;}
+
+
+ /* 후터 */
+ footer{width: 100%;  height: 250px; padding: 50px; margin: auto;background-color: #999999; color: #F9F9F9; font-size: 12px;  margin-top: 50px;}
+ footer>p{width: 80%; text-align: left; margin: auto; 
+   line-height: 1.2;}
+ 
+
+ /* 반응형 */
+ @media screen and (max-width:767px) {
+  nav_toggle {display: none;}
+ 
+.title{padding:10px; align-items: center; text-align: center; }
+
+/* header */
+.main_menu{display: none}
+ 
+/* 메뉴 */
+
+header{ position: fixed; width: 100%;}
+header:hover + .sub_wrap,
+.sub_wrap:hover {
+  display: none;}
+.submenu_content{  display: none;}
+ }
+
+@media (max-width:1023px) {
+  .hamburger{display: flex;}
+  nav.desktop_nav{display: none;}
+}
+
+@media (min-width:1024px) {
+  .mobile_nav{
+    display: none !important;
+  }
+}
