@@ -64,7 +64,9 @@
 
 ### 🖥 메인 페이지 구성
 ![산림 00](https://github.com/user-attachments/assets/aca3870f-b922-48f4-b807-7b4cd7c8573c)
+![산림 005](https://github.com/user-attachments/assets/7cf95fd8-1e47-4424-8ccd-58af8d2cc4f7)
 
+<br><br><br>  
 
 #### Section 1 - 메인 비주얼  
 ![산림 001](https://github.com/user-attachments/assets/fcbbaadf-6db8-4744-9b51-16564ab399b8)
